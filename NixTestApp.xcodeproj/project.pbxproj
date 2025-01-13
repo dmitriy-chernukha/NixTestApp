@@ -10,9 +10,8 @@
 		3203CB2E2D33D84000690458 /* NixTestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203CB2D2D33D84000690458 /* NixTestAppApp.swift */; };
 		3203CB322D33D84100690458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3203CB312D33D84100690458 /* Assets.xcassets */; };
 		3203CB352D33D84100690458 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3203CB342D33D84100690458 /* Preview Assets.xcassets */; };
-		3203CB3F2D33D84100690458 /* NixTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203CB3E2D33D84100690458 /* NixTestAppTests.swift */; };
-		3203CB492D33D84100690458 /* NixTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203CB482D33D84100690458 /* NixTestAppUITests.swift */; };
-		3203CB4B2D33D84100690458 /* NixTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3203CB4A2D33D84100690458 /* NixTestAppUITestsLaunchTests.swift */; };
+		329F8B852D3499E5005B643B /* NixTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F8B832D3499E5005B643B /* NixTestAppUITestsLaunchTests.swift */; };
+		329F8B862D3499E5005B643B /* NixTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329F8B842D3499E5005B643B /* NixTestAppUITests.swift */; };
 		32CD401B2D341F9B00581132 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CD400B2D341F9B00581132 /* Car.swift */; };
 		32CD401C2D341F9B00581132 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CD400C2D341F9B00581132 /* Image.swift */; };
 		32CD401D2D341F9B00581132 /* Seller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CD400D2D341F9B00581132 /* Seller.swift */; };
@@ -26,6 +25,12 @@
 		32CD40272D3433DF00581132 /* ImageCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CD40262D3433DF00581132 /* ImageCarousel.swift */; };
 		32CD402A2D34373600581132 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 32CD40292D34373600581132 /* SDWebImageSwiftUI */; };
 		32CD402D2D34523F00581132 /* NumberFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CD402C2D34523F00581132 /* NumberFormatter.swift */; };
+		32CD402F2D3486E800581132 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CD402E2D3486E800581132 /* MockAPIService.swift */; };
+		32CD40312D34874800581132 /* CarsListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CD40302D34874800581132 /* CarsListViewModelTests.swift */; };
+		32CD40332D34884000581132 /* MockHTTPRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CD40322D34884000581132 /* MockHTTPRepository.swift */; };
+		32CD40352D3488AD00581132 /* APIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CD40342D3488AD00581132 /* APIServiceTests.swift */; };
+		32CD40372D34897F00581132 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CD40362D34897F00581132 /* MockURLProtocol.swift */; };
+		32CD40392D34899800581132 /* HTTPRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CD40382D34899800581132 /* HTTPRepositoryTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,10 +56,9 @@
 		3203CB312D33D84100690458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3203CB342D33D84100690458 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3203CB3A2D33D84100690458 /* NixTestAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NixTestAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3203CB3E2D33D84100690458 /* NixTestAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NixTestAppTests.swift; sourceTree = "<group>"; };
 		3203CB442D33D84100690458 /* NixTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NixTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3203CB482D33D84100690458 /* NixTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NixTestAppUITests.swift; sourceTree = "<group>"; };
-		3203CB4A2D33D84100690458 /* NixTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NixTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		329F8B832D3499E5005B643B /* NixTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NixTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		329F8B842D3499E5005B643B /* NixTestAppUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NixTestAppUITests.swift; sourceTree = "<group>"; };
 		32CD400B2D341F9B00581132 /* Car.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		32CD400C2D341F9B00581132 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		32CD400D2D341F9B00581132 /* Seller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Seller.swift; sourceTree = "<group>"; };
@@ -68,6 +72,12 @@
 		32CD40252D34269100581132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		32CD40262D3433DF00581132 /* ImageCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCarousel.swift; sourceTree = "<group>"; };
 		32CD402C2D34523F00581132 /* NumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFormatter.swift; sourceTree = "<group>"; };
+		32CD402E2D3486E800581132 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
+		32CD40302D34874800581132 /* CarsListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListViewModelTests.swift; sourceTree = "<group>"; };
+		32CD40322D34884000581132 /* MockHTTPRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHTTPRepository.swift; sourceTree = "<group>"; };
+		32CD40342D3488AD00581132 /* APIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceTests.swift; sourceTree = "<group>"; };
+		32CD40362D34897F00581132 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		32CD40382D34899800581132 /* HTTPRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPRepositoryTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				3203CB2C2D33D84000690458 /* NixTestApp */,
+				32BC4F5A2D34999D00F7F5FD /* NixTestAppUITests */,
 				3203CB3D2D33D84100690458 /* NixTestAppTests */,
-				3203CB472D33D84100690458 /* NixTestAppUITests */,
 				3203CB2B2D33D84000690458 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -122,7 +132,6 @@
 				32CD40252D34269100581132 /* Info.plist */,
 				32CD401A2D341F9B00581132 /* Presentation */,
 				32CD40132D341F9B00581132 /* Networking */,
-				32CD40142D341F9B00581132 /* Resources */,
 				32CD402B2D34522900581132 /* Utils */,
 				3203CB2D2D33D84000690458 /* NixTestAppApp.swift */,
 				3203CB312D33D84100690458 /* Assets.xcassets */,
@@ -142,16 +151,18 @@
 		3203CB3D2D33D84100690458 /* NixTestAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				3203CB3E2D33D84100690458 /* NixTestAppTests.swift */,
+				32CD40302D34874800581132 /* CarsListViewModelTests.swift */,
+				32CD40342D3488AD00581132 /* APIServiceTests.swift */,
+				32CD40382D34899800581132 /* HTTPRepositoryTests.swift */,
 			);
 			path = NixTestAppTests;
 			sourceTree = "<group>";
 		};
-		3203CB472D33D84100690458 /* NixTestAppUITests */ = {
+		32BC4F5A2D34999D00F7F5FD /* NixTestAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3203CB482D33D84100690458 /* NixTestAppUITests.swift */,
-				3203CB4A2D33D84100690458 /* NixTestAppUITestsLaunchTests.swift */,
+				329F8B842D3499E5005B643B /* NixTestAppUITests.swift */,
+				329F8B832D3499E5005B643B /* NixTestAppUITestsLaunchTests.swift */,
 			);
 			path = NixTestAppUITests;
 			sourceTree = "<group>";
@@ -169,6 +180,7 @@
 		32CD40132D341F9B00581132 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				32CD403A2D34938D00581132 /* Mocks */,
 				32CD400E2D341F9B00581132 /* Models */,
 				32CD400F2D341F9B00581132 /* APIErrors.swift */,
 				32CD40102D341F9B00581132 /* APIService.swift */,
@@ -176,13 +188,6 @@
 				32CD40122D341F9B00581132 /* HTTPRepository.swift */,
 			);
 			path = Networking;
-			sourceTree = "<group>";
-		};
-		32CD40142D341F9B00581132 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		32CD40172D341F9B00581132 /* CarsList */ = {
@@ -218,6 +223,16 @@
 				32CD402C2D34523F00581132 /* NumberFormatter.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		32CD403A2D34938D00581132 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				32CD402E2D3486E800581132 /* MockAPIService.swift */,
+				32CD40322D34884000581132 /* MockHTTPRepository.swift */,
+				32CD40362D34897F00581132 /* MockURLProtocol.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,6 +313,7 @@
 					};
 					3203CB432D33D84100690458 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 						TestTargetID = 3203CB292D33D84000690458;
 					};
 				};
@@ -363,12 +379,15 @@
 				32CD40242D341F9B00581132 /* LoadingView.swift in Sources */,
 				32CD40202D341F9B00581132 /* Endpoints.swift in Sources */,
 				32CD401D2D341F9B00581132 /* Seller.swift in Sources */,
+				32CD40332D34884000581132 /* MockHTTPRepository.swift in Sources */,
 				32CD401F2D341F9B00581132 /* APIService.swift in Sources */,
 				32CD40222D341F9B00581132 /* CarsListView.swift in Sources */,
 				3203CB2E2D33D84000690458 /* NixTestAppApp.swift in Sources */,
+				32CD402F2D3486E800581132 /* MockAPIService.swift in Sources */,
 				32CD402D2D34523F00581132 /* NumberFormatter.swift in Sources */,
 				32CD40232D341F9B00581132 /* CarsListViewModel.swift in Sources */,
 				32CD40212D341F9B00581132 /* HTTPRepository.swift in Sources */,
+				32CD40372D34897F00581132 /* MockURLProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +395,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3203CB3F2D33D84100690458 /* NixTestAppTests.swift in Sources */,
+				32CD40352D3488AD00581132 /* APIServiceTests.swift in Sources */,
+				32CD40312D34874800581132 /* CarsListViewModelTests.swift in Sources */,
+				32CD40392D34899800581132 /* HTTPRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,8 +405,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3203CB4B2D33D84100690458 /* NixTestAppUITestsLaunchTests.swift in Sources */,
-				3203CB492D33D84100690458 /* NixTestAppUITests.swift in Sources */,
+				329F8B852D3499E5005B643B /* NixTestAppUITestsLaunchTests.swift in Sources */,
+				329F8B862D3499E5005B643B /* NixTestAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,6 +659,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HPN77HZ3DG;
@@ -646,6 +668,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dim.com.NixTestAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = NixTestApp;
@@ -656,6 +679,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HPN77HZ3DG;

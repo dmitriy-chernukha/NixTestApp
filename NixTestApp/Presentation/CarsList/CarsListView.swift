@@ -41,7 +41,7 @@ struct CarsListView: View {
                         viewModel.toggleSorting()
                     }) {
                         HStack {
-                            Text("Sort")
+                            Text("Sort by price")
                                 .font(.headline)
                                 .foregroundColor(.black)
                             Image(systemName: viewModel.sortAscending ? "arrow.up" : "arrow.down")
@@ -53,36 +53,12 @@ struct CarsListView: View {
         }
     }
         
-        private func errorView(message: String) -> some View {
-            VStack(spacing: 16) {
-                Text(message)
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .multilineTextAlignment(.center)
-                .padding(.horizontal, 24)
-            
-            Text("Error")
-                .font(.body)
-                .foregroundColor(.secondary)
-                .multilineTextAlignment(.center)
-                .padding(.horizontal, 24)
-            
-            Button(action: {
-                Task {
-                    await viewModel.fetchTransactions()
-                }
-            }) {
-                HStack {
-                    Text("Try reload data")
-                        .font(.headline)
-                }
-                .padding()
-                .foregroundColor(.white)
-                .background(Color.primary)
-                .cornerRadius(8)
+    private func errorView(message: String) -> some View {
+        ErrorView(message: message) {
+            Task {
+                await viewModel.fetchTransactions()
             }
         }
-        .padding()
     }
     
     private var listView: some View {
@@ -93,9 +69,45 @@ struct CarsListView: View {
 }
 
 extension CarsListView {
+    struct ErrorView: View {
+        let message: String
+        let retryAction: () -> Void
+
+        var body: some View {
+            VStack(spacing: 16) {
+                Text(message)
+                    .font(.largeTitle)
+                    .fontWeight(.bold)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 24)
+                
+                Button(action: retryAction) {
+                    HStack {
+                        Text("Try reload data")
+                            .font(.headline)
+                    }
+                    .padding()
+                    .foregroundColor(.white)
+                    .background(Color.primary)
+                    .cornerRadius(8)
+                }
+            }
+            .padding()
+        }
+    }
+}
+
+extension CarsListView {
+    
+    static let currencyFormatter: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.locale = .current
+        formatter.numberStyle = .currency
+        return formatter
+    }()
+    
     struct CellView: View {
         var car: Car
-        let currencyFormatter = NumberFormatter(locale: .current)
         
         var body: some View {
             VStack(alignment: .leading, spacing: 6) {
@@ -154,7 +166,6 @@ extension CarsListView {
 }
 
 extension CarsListView {
-    
     struct CarInfoView: View {
         let title: String
         let text: String

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Endpoints {
+enum Endpoints: CaseIterable {
     static let baseURL = "http://private-fe87c-simpleclassifieds.apiary-mock.com"
     
     case cars
